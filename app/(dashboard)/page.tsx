@@ -1,10 +1,11 @@
 import { UserButton } from "@clerk/nextjs";
 
-export default function Home() {
+const DashboardPage = () => {
   return (
     <div>
-      <UserButton />
       <p>For logged in users only</p>
     </div>
   );
-}
+};
+
+export default DashboardPage;
