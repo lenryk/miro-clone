@@ -1,8 +1,10 @@
-import Image from "next/image";
-import {Button} from "@/components/ui/button";
+import { UserButton } from "@clerk/nextjs";
 
 export default function Home() {
   return (
-   <Button variant="destructive">Click me</Button>
+    <div>
+      <UserButton />
+      <p>For logged in users only</p>
+    </div>
   );
 }
